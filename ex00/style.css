@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: azure;
+    margin: 0;
+    font-family: serif;
+    color: #222;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.navbar {
+    background-color: midnightblue;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: tan;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#theme-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#theme-btn:hover {
+    background-color: black;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    padding: 20px;
+    /*max-width: fit-content;*/
+}
+
+#pfp {
+    width: 280px;
+    height: 320px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.about-text {
+    background-color: midnightblue;
+    color: whitesmoke;
+    padding: 10px 10px;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.skills-header {
+    background-color: midnightblue;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background-color: midnightblue;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 20px;
+}
+
+#skills {
+    flex: 1;
+    padding: 6px;
+}
+
+#projects {
+    flex: 1;
+    padding: 6px;
+}
+
+#hobbies {
+    flex: 1;
+    padding: 6px;
+}
+
+.projects-container {
+    gap: 8px;
+    background-color: midnightblue;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.projects-header {
+    background-color: midnightblue;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.hobbies-header {
+    background-color: midnightblue;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.hobbies-container {
+    gap: 10px;
+    background-color: midnightblue;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.contact-header {
+    background-color: midnightblue;
+    color: whitesmoke;
+    flex: 1;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font: inherit;
+    max-width: 100%;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+#submit-btn {
+    font-weight: bold;
+    background-color: rgb(80 200 100);
+}
+
+#submit-btn:hover {
+    background-color: rgb(200 80 100);
+    font-size: large;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 600px)
+{
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+body.dark-theme {
+    background-color: #181818;
+    color: #f5f5f5;
+}
+
+body.dark-theme .about-text,
+body.dark-theme .skills-container,
+body.dark-theme .projects-container,
+body.dark-theme .hobbies-container,
+body.dark-theme .form-container,
+body.dark-theme .skills-header,
+body.dark-theme .projects-header,
+body.dark-theme .hobbies-header,
+body.dark-theme .contact-header,
+body.dark-theme .navbar {
+    background-color: #222f3e;
+}
+
+body.dark-theme #submit-btn {
+    background-color: darkgreen;
+}
+
+body.dark-theme #submit-btn:hover {
+    background-color: darkred;
+}
+
+.about-text,
+.skills-container,
+.projects-container,
+.hobbies-container,
+.skills-header,
+.projects-header,
+.hobbies-header,
+.contact-header {
+    transition: background-color 0.4s, color 0.4s;
+}

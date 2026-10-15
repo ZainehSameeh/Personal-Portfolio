@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Zaineh">
+		<title>Zaineh | My Portfolio</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="nav-container">
+                <a class="logo" href="#about">Zaineh Almomani</a>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="theme-color">
+                    <button id="theme-btn" type="button">🌙</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="about-container">
+                    <div>
+                        <img id="pfp" src="assets/profile.jpg" alt="Profile picture" width="320" height="380">
+                    </div>
+                    <div class="about-text">
+                        <h1>Zaineh Almomani</h1>
+                        <p><strong>Web Application Security Student &#128187;</strong></p>
+                        <h2>About me &#128100;</h2>
+                        <p>I am a bachelor graduate with Business Information Technology (BIT) Degree.</p>
+                        <p>I am currently a student at 42Irbid Program! a program where peer-to-peer learning is the way to learn coding and develop skills</p>
+                    </div>
+                </div>
+            </section>
+            <div class="cards">
+                <section id="skills">
+                    <h2 class="skills-header">My skills &#128195;</h2>
+                    <div class="skills-container">
+                        <div>Front-end Development</div>
+                        <div>Data Visualization & Power BI</div>
+                        <div>Team Working</div>
+                        <div>Problem Solving</div>
+                    </div>
+                </section>
+                <section id="projects">
+                    <h2 class="projects-header">My Projects &#128194;</h2>
+                    <div class="projects-container">
+                        <ol>
+                            <li>Project 00 - Linux & Git</li>
+                            <li>Project 01 - HTML</li>
+                            <li>Project 02 - CSS</li>
+                            <li>Project 03 - JavaScript</li>
+                        </ol>
+                    </div>
+                </section>
+                <section id="hobbies">
+                    <h2 class="hobbies-header">My hobbies &#128218;</h2>
+                    <div class="hobbies-container">
+                        <ul>
+                            <li>Coding</li>
+                            <li>Drawing</li>
+                            <li>Reading</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <section id="contact">
+                <div class="form-container">
+                    <h2 class="contact-header">contact me! &#128233;</h2>
+                    <form action="#" method="post">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name: " required>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name: " required>
+                        <label for="lang">What is your preferred language</label>
+                        <select id="lang" name="lang">
+                            <option value="english">English</option>
+                            <option value="arabic">Arabic</option>
+                        </select>
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="write">Is there Something you want to add?</label>
+                        <textarea id="write" name="write" placeholder="Write Something.." rows="1" cols="20"></textarea>
+                        <input type="submit" value="Submit" id="submit-btn">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Personal email<br><a href="mailto:zainehmomani11@gmail.com">zainehmomani11@gmail.com</a></p>
+        </footer>
+    </body>
+</html>
